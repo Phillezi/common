@@ -2,10 +2,9 @@ module github.com/Phillezi/common/config
 
 go 1.24.4
 
-replace github.com/Phillezi/common/utils => ../utils
 
 require (
-	github.com/Phillezi/common/utils v0.0.1
+	github.com/Phillezi/common/utils v0.0.0-00010101000000-000000000000
 	github.com/spf13/viper v1.20.1
 )
 
