@@ -1,9 +1,9 @@
-package lint
+package main
 
 import (
 	"os"
 
-	"github.com/Phillezi/common/scripts/lint/cmd/cli"
+	"github.com/Phillezi/common/scripts/glint/cmd/cli"
 )
 
 func main() {
