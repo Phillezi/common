@@ -2,9 +2,8 @@ module github.com/Phillezi/common/config
 
 go 1.24.4
 
-
 require (
-	github.com/Phillezi/common/utils v0.0.0-00010101000000-000000000000
+	github.com/Phillezi/common/utils v0.0.0-20250625213714-fa9676f3612d
 	github.com/spf13/viper v1.20.1
 )
 

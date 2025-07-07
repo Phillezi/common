@@ -19,6 +19,10 @@ func InitConfig(projectName string, filenames ...string) {
 	viper.SetConfigName(or.Or(filenames...)) // Name of the config file (without extension)
 	viper.SetConfigType("yaml")              // File format (yaml)
 	viper.AddConfigPath(GetConfigPath(projectName))
+	viper.AddConfigPath(or.Or(func() string {
+		wd, _ := os.Getwd()
+		return wd
+	}(), "."))
 	viper.AutomaticEnv() // Read environment variables
 
 	// Load config file
